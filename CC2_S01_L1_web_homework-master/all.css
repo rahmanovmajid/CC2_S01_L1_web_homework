@@ -1,0 +1,149 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	display: grid;
+	justify-content: center;
+	background-color: white;
+	
+	grid-template-columns: 50vw minmax(160px, 200px);
+}
+
+header{
+	height: 160px;
+	
+	display: flex;
+	flex-direction: row;
+}
+
+
+h1, h2 {
+	text-align: center;
+	margin: 10px 0;
+}
+
+img{
+	width: 220px;
+	
+}
+
+
+div {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	justify-content: center;
+}
+
+nav{
+	height: 50px;
+	grid-row: 2;
+	font-weight: bold;
+}
+
+nav ul{
+	display: flex;
+	flex-direction: row;
+	
+	padding: 0;
+	justify-content: center;
+}
+
+
+nav ul li {
+	flex-grow: 1;
+	text-align: center;
+}
+
+ul li a{
+	color: white;
+	background-color: #2a5289;
+	text-decoration: none;
+	padding: 3px;
+	
+	border-radius: 1000px;
+}
+
+section{
+	max-width: 50vw;
+	min-height: 50vh;
+	grid-column: 1;
+	
+	padding: 0 5px;
+	text-align: justify;
+}
+
+table{
+	margin: 0 auto;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+th {
+	padding: 0 12px;
+}
+
+h4.name{
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+aside{
+	min-width: 160px;
+	max-width: 200px;
+	grid-column: 2;
+	padding: 3px;
+	
+	text-align: justify;
+}
+
+
+section, aside{
+	grid-row: 3;
+}
+
+
+
+footer {
+	grid-row: 4;
+	background-color: #2a5289;
+}
+
+ul li{
+	list-style: none;
+	color: white;
+}
+
+footer ul{
+	display: flex;
+	flex-direction: row;
+	
+	padding: 0;
+}
+
+ footer ul li{
+
+	text-align: center;
+}
+
+header,nav,footer{
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+header,nav,section,aside,footer,th,td{ 
+	border: 1px solid #2a5289;
+}
+
+
+.flextwo {
+	flex-grow: 2;
+}
+
+.flexone {
+	flex-grow: 1;
+}
+.back{
+	color: red;
+}
